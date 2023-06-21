@@ -14,6 +14,10 @@ const links = [
     linkText: "About",
     path: "/about",
   },
+  {
+    linkText: "Courses",
+    path: "/courses",
+  },
 ];
 export default function Header() {
   return (
