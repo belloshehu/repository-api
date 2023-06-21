@@ -5,3 +5,5 @@ export type repoProp = {
   stargazers_count: number;
   watchers_count: number;
 };
+
+export type contentType = { type: string };

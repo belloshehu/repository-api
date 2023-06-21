@@ -1,14 +1,15 @@
 import Repo from "@/app/components/Repo";
 import React from "react";
 import { repoProp } from "./models";
+import { resolve } from "path";
 
 const getrepos = async () => {
   const response = await fetch(
     "https://api.github.com/users/belloshehu/repos",
     {}
   );
+  //await new Promise((resolve) => setTimeout(resolve, 1000));
   const repos = await response.json();
-  console.log(repos);
   return repos;
 };
 
