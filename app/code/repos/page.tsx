@@ -21,7 +21,7 @@ const ReposPage = async () => {
         Repositories
       </h1>
       {repos.map((repo: repoProp) => (
-        <Repo repo={repo} />
+        <Repo key={repo.name} repo={repo} />
       ))}
     </section>
   );
