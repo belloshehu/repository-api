@@ -1,5 +1,6 @@
-import Image from "next/image";
+"use client";
 import Link from "next/link";
+import SlickSlider from "./components/SlickSlider";
 
 export default function Home() {
   return (
@@ -23,6 +24,9 @@ export default function Home() {
           <p>Beautifully developed codes</p>
         </Link>
       </section>
+
+      <h2 className="text-xl font-bold mt-10">What users say about us</h2>
+      <SlickSlider />
     </div>
   );
 }

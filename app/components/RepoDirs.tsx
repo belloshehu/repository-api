@@ -5,7 +5,12 @@ import { FaFolder } from "react-icons/fa";
 
 async function getDirs(name: string) {
   const response = await fetch(
-    `https://api.github.com/repos/belloshehu/${name}/contents`
+    `https://api.github.com/repos/belloshehu/${name}/contents`,
+    {
+      next: {
+        revalidate: 60 * 60, // refetch every 1 hour
+      },
+    }
   );
   const contents = await response.json();
   return contents;
