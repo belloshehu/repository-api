@@ -1,7 +1,6 @@
 import Repo from "@/app/components/Repo";
 import React from "react";
 import { repoProp } from "./models";
-import { resolve } from "path";
 
 const getrepos = async () => {
   const response = await fetch(

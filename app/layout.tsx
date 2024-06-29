@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Repositories",
   description: "Web application with list of all repositories",
-  keywords: "web, application, programming, html, javascript",
+  keywords: 'web, application, programming, html, javascript'
 };
 
 export default function RootLayout({
